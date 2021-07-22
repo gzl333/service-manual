@@ -31,6 +31,7 @@ export default defineUserConfig<DefaultThemeOptions>({
             '/': {
                 selectLanguageText: '语言',
                 selectLanguageName: '简体中文',
+                lastUpdatedText: '最后更新',
                 logo: 'https://fed.cstcloud.cn/title.png',
                 navbar: [
                     {
@@ -54,6 +55,7 @@ export default defineUserConfig<DefaultThemeOptions>({
             '/en/': {
                 selectLanguageText: 'Language',
                 selectLanguageName: 'English',
+                lastUpdatedText: 'Last Updated',
                 logo: 'https://fed.cstcloud.cn/title_en_2.png',
                 navbar: [ 
                     {
