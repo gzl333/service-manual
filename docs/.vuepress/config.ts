@@ -21,33 +21,13 @@ export default defineUserConfig<DefaultThemeOptions>({
     /*主题配置*/
     themeConfig: {
         darkMode: false,
+        contributors: false,
         'themePlugins.activeHeaderLinks': true,
         'themePlugins.backToTop': true,
         'themePlugins.nprogress': true,
         // 分语言配置
         locales: {
-            '/en/': {
-                selectLanguageText: 'Language',
-                selectLanguageName: 'English',
-                logo: 'https://fed.cstcloud.cn/title_en_2.png',
-                navbar: [ // 注意加/en/
-                    {
-                        text: 'About',
-                        link: '/en/',
-                    },
-                    {
-                        text: 'Personal Resources',
-                        link: '/en/personal/',
-                    },
-                    {
-                        text: 'Group Resources',
-                        link: '/en/group/',
-                    }, {
-                        text: 'Resource Providers',
-                        link: '/en/provider/',
-                    },
-                ],
-            },
+            // 中文页面的配置
             '/': {
                 selectLanguageText: '语言',
                 selectLanguageName: '简体中文',
@@ -69,7 +49,30 @@ export default defineUserConfig<DefaultThemeOptions>({
                         link: '/provider/',
                     },
                 ],
-            }
+            },
+            // 英文页面的配置
+            '/en/': {
+                selectLanguageText: 'Language',
+                selectLanguageName: 'English',
+                logo: 'https://fed.cstcloud.cn/title_en_2.png',
+                navbar: [ 
+                    {
+                        text: 'About',
+                        link: '/en/', // 注意链接地址加/en/
+                    },
+                    {
+                        text: 'Personal Resources',
+                        link: '/en/personal/',
+                    },
+                    {
+                        text: 'Group Resources',
+                        link: '/en/group/',
+                    }, {
+                        text: 'Resource Providers',
+                        link: '/en/provider/',
+                    },
+                ],
+            },
         },
 
     },
