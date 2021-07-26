@@ -43,12 +43,16 @@ export default defineUserConfig<DefaultThemeOptions>({
                         link: '/personal/',
                     },
                     {
-                        text: '小组资源',
-                        link: '/group/',
-                    }, {
-                        text: '资源提供者',
-                        link: '/provider/',
+                        text: 'VPN',
+                        link: '/vpn/',
                     },
+                    // {
+                    //     text: '小组资源',
+                    //     link: '/group/',
+                    // }, {
+                    //     text: '资源提供者',
+                    //     link: '/provider/',
+                    // },
                 ],
             },
             // 英文页面的配置
@@ -67,12 +71,17 @@ export default defineUserConfig<DefaultThemeOptions>({
                         link: '/en/personal/',
                     },
                     {
-                        text: 'Group Resources',
-                        link: '/en/group/',
-                    }, {
-                        text: 'Resource Providers',
-                        link: '/en/provider/',
+                        text: 'VPN',
+                        link: '/en/vpn/',
                     },
+                    // {
+                    //     text: 'Group Resources',
+                    //     link: '/en/group/',
+                    // }, 
+                    // {
+                    //     text: 'Resource Providers',
+                    //     link: '/en/provider/',
+                    // },
                 ],
             },
         },
