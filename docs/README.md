@@ -2,7 +2,9 @@
 sidebar: false
 ---
 
-# 中国科技云联邦系统简介  
+# 中国科技云联邦简介  
 
-开发中...
+[个人资源](/manual/personal/)
+
+[VPN](/manual/vpn/)
 
