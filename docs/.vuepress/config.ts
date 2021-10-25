@@ -43,13 +43,15 @@ export default defineUserConfig<DefaultThemeOptions>({
                         link: '/personal/',
                     },
                     {
-                        text: 'VPN',
+                        text: '项目组资源',
+                        link: '/group/',
+                    },
+                    {
+                        text: 'VPN使用方法',
                         link: '/vpn/',
                     },
-                    // {
-                    //     text: '小组资源',
-                    //     link: '/group/',
-                    // }, {
+        
+                    //{
                     //     text: '资源提供者',
                     //     link: '/provider/',
                     // },
@@ -71,13 +73,14 @@ export default defineUserConfig<DefaultThemeOptions>({
                         link: '/en/personal/',
                     },
                     {
+                        text: 'Group Resources',
+                        link: '/en/group/',
+                    },
+                    {
                         text: 'VPN',
                         link: '/en/vpn/',
                     },
-                    // {
-                    //     text: 'Group Resources',
-                    //     link: '/en/group/',
-                    // }, 
+ 
                     // {
                     //     text: 'Resource Providers',
                     //     link: '/en/provider/',
