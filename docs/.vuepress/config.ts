@@ -32,7 +32,7 @@ export default defineUserConfig<DefaultThemeOptions>({
                 selectLanguageText: '语言',
                 selectLanguageName: '简体中文',
                 lastUpdatedText: '最后更新',
-                logo: 'https://fed.cstcloud.cn/title.png',
+                logo: null, //'https://fed.cstcloud.cn/title.png', // 中文logo
                 navbar: [
                     {
                         text: '首页',
@@ -50,7 +50,7 @@ export default defineUserConfig<DefaultThemeOptions>({
                         text: 'VPN使用方法',
                         link: '/vpn/',
                     },
-        
+
                     //{
                     //     text: '资源提供者',
                     //     link: '/provider/',
@@ -62,8 +62,8 @@ export default defineUserConfig<DefaultThemeOptions>({
                 selectLanguageText: 'Language',
                 selectLanguageName: 'English',
                 lastUpdatedText: 'Last Updated',
-                logo: 'https://fed.cstcloud.cn/title_en_2.png',
-                navbar: [ 
+                logo: null, //  'https://fed.cstcloud.cn/title_en_2.png', // 英文logo
+                navbar: [
                     {
                         text: 'About',
                         link: '/en/', // 注意链接地址加/en/
@@ -80,7 +80,7 @@ export default defineUserConfig<DefaultThemeOptions>({
                         text: 'VPN',
                         link: '/en/vpn/',
                     },
- 
+
                     // {
                     //     text: 'Resource Providers',
                     //     link: '/en/provider/',
