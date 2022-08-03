@@ -4,7 +4,7 @@
 ## Windows  
 ### 1 openVPN客户端   
 #### 1.1 客户端下载
-请点击链接[下载openVPN客户端](http://159.226.91.152/download/openvpn/openvpn-install-2.4.6-I602.exe)
+请点击链接[下载openVPN客户端](https://obs.cstcloud.cn/share/obs/cstcloud/OpenVPN-2.5.4-I604-amd64.msi)
 
 #### 1.2 客户端安装  
 * 点击【next】，进入下一步  
