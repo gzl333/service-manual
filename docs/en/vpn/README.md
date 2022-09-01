@@ -32,7 +32,7 @@ They are: 1. VPN node configuration file  2. CA certificate file
 * The configuration file corresponds to the service node, that is, **the server in the same service node uses the same configuration file, and only needs to be configured once.**  
 
 ####  2.1 Downloading the Configuration File   
-* The downloading location is shown in Figure 5, click 【Download】 to start the download; some browsers need to right-click the link and select "Save As File".
+* The downloading location is shown in Figure 5, click 【Download】 to start the download.
 
 ![pic5 The downloading location of configuration file](./img/2-configfiles.jpg)
 
@@ -57,7 +57,7 @@ They are: 1. VPN node configuration file  2. CA certificate file
 
 ![pic9 enter username and password](./img/4-user-password.jpg)
 
-* After the connection is successful, the lower right corner of the taskbar will appear: ![Alt text](./img/4-conn-success.png) , this means that the VPN is connected. At this point, SSH connection can be made to the server.
+* After the connection is successful, the lower right corner of the taskbar will appear: ![Alt text](./img/4-conn-success.png) , this means that the VPN is connected. At this point, SSH connection can be implemented to the server.
 
 
 ## macOS
