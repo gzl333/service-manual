@@ -53,4 +53,103 @@
 
 
 ## macOS
-待更新...
+### 1 openVPN客户端   
+#### 1.1 客户端下载
+请点击链接[下载openVPN客户端](https://openvpn.net/downloads/openvpn-connect-v3-macos.dmg)
+
+#### 1.2 客户端安装  
+* 双击安装界面的VPN图标，进入下一步  
+![图10 安装openVPN(1)](./img/5-openVPN-1.jpg )
+
+* 点击【Continue】，进入下一步  
+![图11 安装openVPN(2)](./img/5-openVPN-2.jpg)
+
+* 出现许可协议页面，点击【Continue】，在弹出的界面点击【Agree】，进入下一步  
+![图12 安装openVPN(3)](./img/5-openVPN-3.jpg)
+
+* 进入下载界面，点击【Install】进行安装  
+![图13 安装openVPN(4)](./img/5-openVPN-4.jpg)
+
+* 下载完成后会弹出如图5所示的页面，点击【Close】结束安装
+![图14 安装openVPN(4)](./img/5-openVPN-5.jpg)
+
+### 2 服务节点配置文件
+
+* openVPN客户端安装完毕后，需要配置2个配置文件后，方可使用。  
+分别是：  1. VPN节点配置文件  2. CA证书文件  
+* 配置文件与服务节点对应，即：**同一个服务节点内的云主机，所使用的配置文件相同，只需配置一次即可。**  
+
+####  2.1 配置文件下载   
+* 下载位置如下图所示，点击【下载】即可。 
+![图15 配置文件下载位置](./img/2-configfiles.jpg)
+
+#### 2.2 移动配置文件
+* 将这两个文件移动到OpenVPN的Support文件夹中，例如以下位置：/Applications/OpenVPN Connect
+（若在安装过程中修改了目录位置，则需自行找到对应路径）
+
+![图16 配置文件配置目录](./img/6-1.jpg)
+
+* 若在复制过程中遇到提示，需要提供管理员权限才能移动文件，直接点击【Authenticate】。
+![图17 管理员权限](./img/6-2.jpg)
+
+* 在弹出页面输入用户名和密码，点击【Ok】即可。
+![图18 管理员权限](./img/6-3.jpg)
+
+#### 2.3 信任证书文件
+* 在访达中访问钥匙串
+![图19 访问钥匙串](./img/6-4.jpg)
+
+* 点击左侧菜单栏中的【System】
+![图20 访问钥匙串](./img/6-5.jpg)
+
+* 直接将CA证书文件拖动到钥匙串页面，此时CA证书文件是不受信任的，如下图所示。
+![图21 将CA证书文件拖动到钥匙串页面](./img/6-6.jpg)
+
+* 左键双击该CA证书文件，点击【Trust】左侧的三角形按钮展开其功能
+![图22 添加信任（1）](./img/6-7.jpg)
+
+* 将第一项【When using this certificate:】的默认选项改为【Always Trust】，修改完毕后其它选项会随之改变，关闭该页面即可完成修改。
+![图23 添加信任（2）](./img/6-8.jpg)
+
+![图24 添加信任（3）](./img/6-9.jpg)
+
+* 添加信任后会显示如下图所示的界面。
+![图25 添加信任（4）](./img/6-10.jpg)
+
+
+### 3 下载Tunnelblick，启动VPN连接 
+#### 3.1 Tunnelblick客户端下载
+请点击链接[下载openVPN客户端](https://tunnelblick.net/release/Latest_Tunnelblick_Stable.dmg)
+
+#### 3.2 Tunnelblick客户端安装
+
+* 点击下载完成后的文件会弹出如下图所示的页面。
+![图26 Tunnelblick客户端安装（1）](./img/7-1.jpg)
+
+* 按照页面上的指示进行安装，安装完成后会出现配置configuration files的提示信息，按照需求进行操作。
+![图27 Tunnelblick节点配置（1）](./img/7-2.jpg)
+
+* 或左键双击屏幕右上角出现Tunnelblick连接按钮，弹出configuration files配置页面，手动将之前下载的VPN节点配置文件直接拖入左侧的【Configurations】菜单栏中，在弹出页面中选择【Only Me】。
+![图28 Tunnelblick节点配置（2）](./img/7-3.jpg)
+
+* 配置完成后的页面如下图所示。
+![图28 Tunnelblick节点配置（3）](./img/7-4.jpg)
+
+* 若出现关于Tunnelblick版本的警告，直接点击【Ok】即可。
+![图28 Tunnelblick节点配置（4）](./img/7-5.jpg)
+
+* 左键单击右上角的Tunnelblick连接按钮，选择Connect选项。
+![图29 Tunnelblick连接](./img/7-6.jpg)
+
+* 在连接页面中输入配置文件下载页面所示的用户名和密码，【Security code】项可暂时忽略不填。
+![图30 Tunnelblick连接](./img/7-7.jpg)
+
+* 若出现如图31,32所示的提示或警告，可直接点击【Ok】跳过。
+![图31 Tunnelblick连接](./img/7-8.jpg)
+![图32 Tunnelblick连接](./img/7-9.jpg)
+
+* 连接成功后，任务栏右上角的Tunnelblick按钮变为深色，右键单击该按钮会出现表示连接状态的页面。此时表示VPN已连接，可对云主机进行SSH连接。
+![图33 Tunnelblick连接成功](./img/7-10.jpg)
+
+
+
