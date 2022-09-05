@@ -1,5 +1,5 @@
 # VPN使用方法  
-部分云主机所在服务节点需要连接VPN后，方可进行SSH连接。  
+部分云主机所在服务单元需要连接VPN后，方可进行SSH连接。  
 
 ## Windows  
 ### 1 openVPN客户端   
@@ -19,11 +19,11 @@
 * 安装目录使用默认目录，无须修改，点击【Install】进行安装  
 ![图4 安装openVPN(4)](./img/1-openVPN-4.jpg)
 
-### 2 服务节点配置文件
+### 2 服务单元配置文件
 
 * openVPN客户端安装完毕后，需要配置2个配置文件后，方可使用。  
 分别是：  1. VPN节点配置文件  2. CA证书文件  
-* 配置文件与服务节点对应，即：**同一个服务节点内的云主机，所使用的配置文件相同，只需配置一次即可。**  
+* 配置文件与服务单元对应，即：**同一个服务单元内的云主机，所使用的配置文件相同，只需配置一次即可。**  
 
 ####  2.1 配置文件下载   
 * 下载位置如图5所示，点击【下载】即可；部分浏览器需要右键点击链接，选择“另存为文件”。  
@@ -53,83 +53,83 @@
 
 
 ## macOS
-### 1 服务节点配置文件
+### 1 服务单元配置文件
 
-* openVPN客户端安装完毕后，需要配置2个配置文件后，方可使用。  
+* 首先，对VPN客户端运行所需的两个配置文件进行下载。  
 分别是：  1. VPN节点配置文件  2. CA证书文件  
-* 配置文件与服务节点对应，即：**同一个服务节点内的云主机，所使用的配置文件相同，只需配置一次即可。**  
+* 配置文件与服务单元对应，即：**同一个服务单元内的云主机，所使用的配置文件相同，只需配置一次即可。**  
 
 ####  1.1 配置文件下载   
 * 下载位置如下图所示，点击【下载】即可。 
 ![图10 配置文件下载位置](./img/2-configfiles.jpg)
 
 #### 1.2 移动配置文件
-* 将这两个文件移动到OpenVPN的Support文件夹中，例如以下位置：/Applications/OpenVPN Connect
-（若在安装过程中修改了目录位置，则需自行找到对应路径）
-
-![图11 配置文件配置目录](./img/6-1.jpg)
+* 将这两个文件放入同一文件夹中，例如以下位置：/Applications/OpenVPN Connect
+（安装目录可自定义）
 
 * 若在复制过程中遇到提示，需要提供管理员权限才能移动文件，直接点击【Authenticate】。
-![图12 管理员权限](./img/6-2.jpg)
+![图11 管理员权限](./img/6-2.jpg)
 
 * 在弹出页面输入用户名和密码，点击【Ok】即可。
-![图13 管理员权限](./img/6-3.jpg)
+![图12 管理员权限](./img/6-3.jpg)
 
 #### 1.3 信任证书文件
-* 在访达中访问钥匙串
-![图14 访问钥匙串](./img/6-4.jpg)
+* 在启动页面访问钥匙串
+![图13 访问钥匙串](./img/6-4.jpg)
 
 * 点击左侧菜单栏中的【System】
-![图15 访问钥匙串](./img/6-5.jpg)
+![图14 访问钥匙串](./img/6-5.jpg)
 
 * 直接将CA证书文件拖动到钥匙串页面，此时CA证书文件是不受信任的，如下图所示。
-![图16 将CA证书文件拖动到钥匙串页面](./img/6-6.jpg)
+![图15 将CA证书文件拖动到钥匙串页面](./img/6-6.jpg)
 
 * 左键双击该CA证书文件，点击【Trust】左侧的三角形按钮展开其功能
-![图17 添加信任（1）](./img/6-7.jpg)
+![图16 添加信任（1）](./img/6-7.jpg)
 
 * 将第一项【When using this certificate:】的默认选项改为【Always Trust】，修改完毕后其它选项会随之改变，关闭该页面即可完成修改。
-![图18 添加信任（2）](./img/6-8.jpg)
-
-![图19 添加信任（3）](./img/6-9.jpg)
+![图17 添加信任（2）](./img/6-8.jpg)
+![图18 添加信任（3）](./img/6-9.jpg)
 
 * 添加信任后会显示如下图所示的界面。
-![图20 添加信任（4）](./img/6-10.jpg)
+![图19 添加信任（4）](./img/6-10.jpg)
 
 
 ### 2 下载Tunnelblick，启动VPN连接 
 #### 2.1 Tunnelblick客户端下载
-请点击链接[下载openVPN客户端](https://tunnelblick.net/release/Latest_Tunnelblick_Stable.dmg)
+请点击链接[下载Tunnelblick客户端](https://tunnelblick.net/release/Latest_Tunnelblick_Stable.dmg)
 
 #### 2.2 Tunnelblick客户端安装及配置
 
-* 点击下载完成后的文件会弹出如下图所示的页面。
-![图21 Tunnelblick客户端安装（1）](./img/7-1.jpg)
+* 点击下载的文件会弹出如下图所示的页面。
+![图20 Tunnelblick客户端安装（1）](./img/7-1.jpg)
 
 * 按照页面上的指示进行安装，安装完成后会出现配置configuration files的提示信息，按照需求进行操作。
-![图22 Tunnelblick节点配置（1）](./img/7-2.jpg)
 
-* 或左键双击屏幕右上角出现Tunnelblick连接按钮，弹出configuration files配置页面，手动将之前下载的VPN节点配置文件直接拖入左侧的【Configurations】菜单栏中，在弹出页面中选择【Only Me】。
-![图23 Tunnelblick节点配置（2）](./img/7-3.jpg)
+![图21 Tunnelblick节点配置（1）](./img/7-2.jpg)
+
+* 或左键双击屏幕右上角出现Tunnelblick客户端图标，弹出configuration files配置页面，手动将之前下载的VPN节点配置文件直接拖入左侧的【Configurations】菜单栏中，在弹出页面中选择【Only Me】。
+![图22 Tunnelblick节点配置（2）](./img/7-3.jpg)
 
 * 配置完成后的页面如下图所示。
-![图24 Tunnelblick节点配置（3）](./img/7-4.jpg)
+![图23 Tunnelblick节点配置（3）](./img/7-4.jpg)
 
 * 若出现关于Tunnelblick版本的警告，直接点击【Ok】即可。
-![图25 Tunnelblick节点配置（4）](./img/7-5.jpg)
+![图24 Tunnelblick节点配置（4）](./img/7-5.jpg)
 
-* 左键单击右上角的Tunnelblick连接按钮，选择Connect选项。
-![图26 Tunnelblick连接](./img/7-6.jpg)
+* 然后左键单击右上角的Tunnelblick客户端图标，选择Connect选项。
+![图25 Tunnelblick连接](./img/7-6.jpg)
 
-* 在连接页面中输入配置文件下载页面所示的用户名和密码，【Security code】项可暂时忽略不填。
-![图27 Tunnelblick连接](./img/7-7.jpg)
+* 输入用户名和密码，【Security code】项可暂时忽略不填。
+（用户名和密码可在配置文件的下载页面获得）
+
+![图26 Tunnelblick连接](./img/7-7.jpg)
 
 * 若出现如下图所示的提示或警告，可直接点击【Ok】跳过。
-![图28 Tunnelblick连接](./img/7-8.jpg)
-![图29 Tunnelblick连接](./img/7-9.jpg)
+![图27 Tunnelblick连接](./img/7-8.jpg)
+![图28 Tunnelblick连接](./img/7-9.jpg)
 
-* 连接成功后，任务栏右上角的Tunnelblick按钮变为深色，右键单击该按钮会出现表示连接状态的页面。此时表示VPN已连接，可对云主机进行SSH连接。
-![图30 Tunnelblick连接成功](./img/7-10.jpg)
+* 连接成功后，任务栏右上角的Tunnelblick客户端图标会变为深色，右键单击该图标会出现表示连接状态的页面。此时表示VPN已连接，可对云主机进行SSH连接。
+![图29 Tunnelblick连接成功](./img/7-10.jpg)
 
 
 
