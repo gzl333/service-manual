@@ -2,7 +2,7 @@
 sidebar: false
 ---
 
-# Introduction to CSTcloud Federation
+# Introduction to CSTCloud Federation
 
-In development...
+Under Development.
 
