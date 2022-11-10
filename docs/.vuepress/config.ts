@@ -39,22 +39,37 @@ export default defineUserConfig<DefaultThemeOptions>({
                         link: '/',
                     },
                     {
-                        text: '个人资源',
+                        text: '关于我们',
+                        link: '/about/',
+                    },
+                    {
+                        text: '资源与服务',
+                        link: '/resource/',
+                    },
+                    {
+                        text: '应用案例',
+                        link: '/case/',
+                    },
+                    // {
+                    //     text: '科研云主机',
+                    //     link: '/server/',
+                    // },
+                    // {
+                    //     text: '对象存储',
+                    //     link: '/storage/',
+                    // },
+                    {
+                        text: '个人云主机',
                         link: '/personal/',
                     },
                     {
-                        text: '项目组资源',
+                        text: '项目组云主机',
                         link: '/group/',
                     },
                     {
                         text: 'VPN使用方法',
                         link: '/vpn/',
-                    },
-
-                    //{
-                    //     text: '资源提供者',
-                    //     link: '/provider/',
-                    // },
+                    }
                 ],
             },
             // 英文页面的配置
@@ -65,26 +80,21 @@ export default defineUserConfig<DefaultThemeOptions>({
                 logo: null, //  'https://fed.cstcloud.cn/title_en_2.png', // 英文logo
                 navbar: [
                     {
-                        text: 'About',
+                        text: 'Home',
                         link: '/en/', // 注意链接地址加/en/
                     },
-                    {
-                        text: 'Personal Resources',
-                        link: '/en/personal/',
-                    },
-                    {
-                        text: 'Group Resources',
-                        link: '/en/group/',
-                    },
+                    // {
+                    //     text: 'Personal Resources',
+                    //     link: '/en/personal/',
+                    // },
+                    // {
+                    //     text: 'Group Resources',
+                    //     link: '/en/group/',
+                    // },
                     {
                         text: 'VPN',
                         link: '/en/vpn/',
-                    },
-
-                    // {
-                    //     text: 'Resource Providers',
-                    //     link: '/en/provider/',
-                    // },
+                    }
                 ],
             },
         },
