@@ -22,10 +22,9 @@
 
 # vuepress
 node_modules
-/docs/.vuepress/dist
-/docs/.vuepress/.cache
-/docs/.vuepress/.temp
-
+/src/.vuepress/dist/
+/src/.vuepress/.temp/
+/src/.vuepress/.cache/
 
 # local env files
 .env.local
