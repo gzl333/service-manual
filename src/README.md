@@ -3,7 +3,7 @@ home: true
 icon: home
 title: 首页
 
-heroImage: /cstcloud_logo.png
+heroImage: /logo_vertical.png
 heroText: 一体化云服务平台用户手册
 tagline: 一站式满足科研IT需求
 actions:
