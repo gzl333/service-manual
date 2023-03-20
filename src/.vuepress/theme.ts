@@ -10,9 +10,10 @@ export default hopeTheme({
     //     url: "https://www.cstcloud.cn",
     // },
 
+    // icon集
     iconAssets: "iconfont",
 
-    logo: "/cstcloud_logo.png",
+    logo: "/logo.png",
 
     // repo: "vuepress-theme-hope/vuepress-theme-hope",
     // docsDir: "demo/theme-docs/src",
@@ -28,12 +29,20 @@ export default hopeTheme({
             // sidebar
             sidebar: zhSidebar,
 
-            footer: "默认页脚",
+            footer: '1996 - 2022 中国科学院计算机网络信息中心 版权所有 <br/> 京ICP备09112257号-94',
 
             displayFooter: true,
 
+            lastUpdated: true,
+
+            contributors: true,
+
+            copyright: false,
+
             // page meta
             metaLocales: {
+                lastUpdated: '上次编辑于',
+                contributors: '编辑者',
                 editLink: "在 GitHub 上编辑此页",
             },
         },
@@ -50,6 +59,7 @@ export default hopeTheme({
             displayFooter: true,
 
             metaLocales: {
+                lastUpdated: 'Last updated on',
                 editLink: "Edit this page on GitHub",
             },
         },
@@ -65,10 +75,14 @@ export default hopeTheme({
     },
 
     plugins: {
-        comment: {
-            // @ts-expect-error: You should generate and use your own comment service
-            provider: "Waline",
-        },
+        // 评论栏目
+        comment: false,
+
+        // dev模式下，git信息的热更新
+        // git: true,
+
+        // 为每个文件夹自动生成带有目录的 README.md
+        // autoCatalog: true,
 
         // all features are enabled for demo, only preserve features you need here
         mdEnhance: {

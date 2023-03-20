@@ -2,6 +2,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
+
   base: "/manual/",
 
   locales: {
@@ -13,8 +14,8 @@ export default defineUserConfig({
     },
     "/en/": {
       lang: "en-US",
-      title: "User Manual - CSTCloud Integrated Service Platform",
-      description: "User Manual - CSTCloud Integrated Service Platform",
+      title: "Integrated Service Platform - User Manual",
+      description: "Integrated Service Platform - User Manual",
     }
   },
 
