@@ -26,14 +26,20 @@ export default [
         ],
     },
     {
+        text: "使用指南",
+        icon: "creative",
+        link: "/guide/",
+        activeMatch: "^/guide/$", // 仅在 `/guide/` 激活
+    },
+    {
         text: "云主机",
         icon: "computer",
-        prefix: "/server/",
+        prefix: "/guide/server/",
         children: [
             {
                 text: "云主机操作",
                 // icon: "config",
-                link: "personal/",
+                link: "fundamental/",
             },
             {
                 text: "项目组",
@@ -50,7 +56,7 @@ export default [
     {
         text: "对象存储",
         icon: "stack",
-        link: "/storage/"
+        link: "/guide/storage/"
     },
     {
         text: "更新日志",
@@ -92,6 +98,16 @@ export default [
                         // icon: "creative",
                         link: "wallet/"
                     },
+                    // {
+                    //     text: "微前端主应用",
+                    //     // icon: "creative",
+                    //     link: "main/"
+                    // },
+                    // {
+                    //     text: "微前端路由",
+                    //     // icon: "creative",
+                    //     link: "root/"
+                    // },
                 ],
             },
             {

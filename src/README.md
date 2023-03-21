@@ -9,14 +9,14 @@ tagline: 一站式满足科研IT需求
 actions:
 
 - text: 使用指南 💡
-  link: /guide.md
+  link: ./guide/
   type: primary
 
 - text: 项目信息
-  link: /about/project/
+  link: ./about/project/
 
-- text: 成功案例
-  link: /about/case/
+- text: 应用案例
+  link: ./about/case/
 
 ---
 
@@ -50,7 +50,7 @@ actions:
 
 ## 技术栈
 
-前端：Single-SPA，TypeScript，Quasar，Vue.js 3.2，Pinia
+前端：TypeScript，Vue.js，Single-SPA，Quasar，Pinia
 
 后端：Python 3.9，Django 3.2
 

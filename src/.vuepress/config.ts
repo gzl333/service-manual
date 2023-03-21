@@ -12,11 +12,11 @@ export default defineUserConfig({
       description: "一体化云服务平台-用户手册",
 
     },
-    "/en/": {
-      lang: "en-US",
-      title: "Integrated Service Platform - User Manual",
-      description: "Integrated Service Platform - User Manual",
-    }
+    // "/en/": {
+    //   lang: "en-US",
+    //   title: "Integrated Service Platform - User Manual",
+    //   description: "Integrated Service Platform - User Manual",
+    // }
   },
 
   theme,
