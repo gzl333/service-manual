@@ -12,6 +12,7 @@ export default defineUserConfig({
       description: "一体化云服务平台-用户手册",
 
     },
+    // 暂时禁用英文版，待填充
     // "/en/": {
     //   lang: "en-US",
     //   title: "Integrated Service Platform - User Manual",
