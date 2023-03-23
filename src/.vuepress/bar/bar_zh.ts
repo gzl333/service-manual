@@ -56,7 +56,29 @@ export default [
     {
         text: "对象存储",
         icon: "stack",
-        link: "/guide/storage/"
+        prefix:  "/guide/storage/",
+        children: [
+            {
+                text: "介绍",
+                // icon: "config",
+                link: "obs/",
+            },
+            {
+                text: "web页面",
+                // icon: "config",
+                link: "web/",
+            },
+            {
+                text: "ftp访问",
+                // icon: "config",
+                link: "ftp/",
+            },
+            {
+                text: "rclone",
+                // icon: "config",
+                link: "rclone/",
+            },
+        ],
     },
     {
         text: "更新日志",
