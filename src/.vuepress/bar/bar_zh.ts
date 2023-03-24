@@ -74,6 +74,16 @@ export default [
                 link: "ftp/",
             },
             {
+                text: "HTTP API",
+                // icon: "config",
+                link: "api/",
+            },
+            {
+                text: "兼容AWS S3",
+                // icon: "config",
+                link: "s3/",
+            },
+            {
                 text: "rclone",
                 // icon: "config",
                 link: "rclone/",
