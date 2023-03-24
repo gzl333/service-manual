@@ -14,4 +14,7 @@ index: true
 
 ## 对象存储
 
-1. [对象存储操作](./storage/)
+1. [对象存储介绍](./storage/obs/)
+1. [web页面使用](./storage/web/)
+1. [ftp使用](./storage/ftp/)
+1. [rclone可挂载客户端使用](./storage/rclone/)
