@@ -10,17 +10,17 @@
 
 ## 怎么访问对象存储？
 
-- web页面：一体化云服务平台(https://service.cstcloud.cn) [web页面](../web/)
+- [**web页面**](../web/)：一体化云服务平台(https://service.cstcloud.cn) 
 
-- FTP(FTPS)：使用标准FTP客户端访问，比如：FileZilla、LFTP(命令行)等[ftp](../ftp/)
+- [**FTP(FTPS)**](../ftp/)：使用标准FTP客户端访问，比如：FileZilla、LFTP(命令行)等
 
-- 原生HTTP API：RESTful风格标准用户接口，支持2种用户认证方式、1种存储桶认证方式
+- [**原生HTTP API**](../api/)：RESTful风格标准用户接口，支持3种用户认证方式、1种存储桶认证方式
 
-- 兼容AWS S3接口：兼容18个接口的部分参数的调用
+- [**兼容AWS S3接口**](../s3/)：兼容18个接口的部分参数的调用
 
-- s3 tools：兼容s3cmd、s3fs、S3 Browser
+- **s3 tools**：兼容s3cmd、s3fs、S3 Browser
 
-- mount：可挂载客户端rclone，将存储桶挂载到本地目录，支持Windows和Linux操作系统[rclone](../rclone/)
+- [**mount**](../rclone/)：可挂载客户端rclone，将存储桶挂载到本地目录，支持Windows和Linux操作系统
 
 ## 使用对象存储能做什么？
 
