@@ -37,7 +37,7 @@ export default [
         prefix: "/guide/server/",
         children: [
             {
-                text: "云主机操作",
+                text: "个人云主机",
                 // icon: "config",
                 link: "fundamental/",
             },
