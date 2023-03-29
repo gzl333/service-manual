@@ -6,7 +6,7 @@
 
 优点：**轻量级、功能实用、维护简单、可个性化定制**  
 
-开源地址：https://gitee.com/gosc-cnic/evcloud  
+开源地址：https://gitee.com/cstcloud-cnic/evcloud  
 
 ![EVCloud技术架构](./img/01_evcloud.png)  
 
@@ -15,7 +15,7 @@
 
 对象存储系统支持PB级非/半结构化数据的海量存储，底层基于纠删码技术构建稳定持久、高性能、高可用分布式存储服务，具有简单易用、安全、集约的优势。除了可以在本平台上传、下载、共享对象存储桶的数据，还可以通过HTTP RESTFul API、FTP协议、rclone客户端挂载到本地目录来访问对象数据，并提供数据异地备份功能。  
 
-开源地址：https://gitee.com/gosc-cnic/iharbor  
+开源地址：https://gitee.com/cstcloud-cnic/iharbor  
 
 ![iharbor技术架构](./img/02_iharbor.png)  
 

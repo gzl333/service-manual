@@ -58,8 +58,8 @@ actions:
 
 ## 开源地址
 
-中间件管理软件：https://gitee.com/gosc-cnic/vms
+中间件管理软件：https://gitee.com/cstcloud-cnic/vms
 
-EVCloud：https://gitee.com/gosc-cnic/evcloud
+EVCloud：https://gitee.com/cstcloud-cnic/evcloud
 
-iharbor：https://gitee.com/gosc-cnic/iharbor  
+iharbor：https://gitee.com/cstcloud-cnic/iharbor  
