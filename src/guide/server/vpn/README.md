@@ -47,6 +47,45 @@
 
 * 连接成功后，任务栏右下角会出现![Alt text](./img/4-conn-success.png) ，即表示VPN已连接。此时可对云主机进行SSH连接。
 
+## Linux
+以centos 9 stream操作系统为例
+### 1 命令行安装openvpn
+
+yum -y install epel-release  
+yum -y install openvpn
+
+### 2 服务单元配置文件
+ 
+* 配置文件与服务单元对应，即：**同一个服务单元内的云主机，所使用的配置文件相同，只需配置一次即可。**    
+
+####  2.1 配置文件下载   
+* 下载位置如图所示，点击【下载】即可；部分浏览器需要右键点击链接，选择“另存为文件”。  
+![图5 配置文件下载位置](./img/2-configfiles.png)
+
+#### 2.2 移动配置文件
+* 将刚才下载的VPN配置文件移动到配置文件保存路径。   
+  Linux操作系统下openVPN的默认配置文件保存路径为：/etc/openvpn/client（若在安装过程中修改了目录位置，则需自行找到对应路径） 
+
+### 3 连接vpn
+输入连接命令（openvpn --daemon --cd /etc/openvpn/client --config gosc_33.3.ovpn --log-append /var/log/openvpn.log --auth-user-pass），根据提示输入对应的账户和vpn密码（[查看vpn信息](https://service.cstcloud.cn/my/server/vpn)）。    
+![openvpn连接](./img/8-1.png)
+
+参数解释：  
+* --daemon：后台运行
+* --cd：配置文件目录路径
+* --config：配置文件名称
+* --log-append：日志文件
+* --auth-user-pass：对应服务单元vpn的账户和密码
+
+注意：可以同时起多个进程连接不同的vpn，但是同一个vpn不能有多个进程同时启用。  
+
+### 4 验证  
+使用命令（tail -f /var/log/openvpn.log）查看日志，出现以下提示则表示vpn连接成功。  
+![openvpn连接成功](./img/8-2.png)
+
+### 5 断开vpn连接
+使用命令（ps -e | grep openvpn）查找openvpn的进程号；使用命令（kill -9 进程号）结束进程。  
+![openvpn断开](./img/8-3.png)
 
 ## macOS
 ### 1 服务单元配置文件
