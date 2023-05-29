@@ -37,19 +37,29 @@ export default [
         prefix: "/guide/server/",
         children: [
             {
-                text: "个人云主机",
+                text: "个人云主机管理",
                 // icon: "config",
                 link: "fundamental/",
             },
             {
-                text: "项目组",
+                text: "项目组及云主机管理",
                 // icon: "config",
                 link: "group/",
             },
             {
-                text: "VPN使用",
+                text: "openVPN客户端安装配置",
                 // icon: "config",
                 link: "vpn/",
+            },
+            {
+                text: "访问Windows云主机",
+                // icon: "config",
+                link: "windows/",
+            },
+            {
+                text: "访问Linux云主机",
+                // icon: "config",
+                link: "linux/",
             },
         ],
     },
