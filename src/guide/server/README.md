@@ -6,8 +6,12 @@
 
 
 
-1. [个人云主机](./fundamental/)
+1. [个人云主机管理](./fundamental/)
 
-1. [项目组](./group/)
+1. [项目组及云主机管理](./group/)
 
-1. [VPN使用](./vpn/)
+1. [openVPN客户端安装配置](./vpn/)
+
+1. [访问Windows云主机](./windows/)
+
+1. [访问Linux云主机](./linux/)

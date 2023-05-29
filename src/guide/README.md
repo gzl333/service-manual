@@ -18,11 +18,15 @@ index: true
 
 ## 科研计算云主机使用手册
 
-1. [个人云主机](./server/fundamental/)
+1. [个人云主机管理](./server/fundamental/)
 
-1. [项目组](./server/group/)
+1. [项目组及云主机管理](./server/group/)
 
-1. [VPN使用](./server/vpn/)
+1. [openVPN客户端安装配置](./server/vpn/)
+
+1. [访问Windows云主机](./server/windows/)
+
+1. [访问Linux云主机](./server/linux/)
 
 
 ## 科研大数据存储-对象存储使用手册
